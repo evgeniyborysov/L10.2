@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 300px;
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-family: Lato;
+    font-size: 34px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: #3c3c3c;
+}
+
+p {
+    width: 600px;
+    text-align: center;
+    padding-top: 65px;
+    font-family: Lato;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #3c3c3c;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.card {
+	width: 300px;
+	height: 300px;
+	position: relative;
+	display: flex;
+	margin: 40px;
+}
+
+.card_img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+	z-index: 2;
+}
+
+.card_img img {
+	position: absolute;
+	text-transform: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+	z-index: 2;
+	object-fit: cover;
+}
+
+.card_body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .5s;
+	background: #fff;
+	z-index: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	padding: 15px;
+}
+
+.card_body h2 {
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: #282528;
+	text-align: center;
+}
+
+.card_body span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #646464;
+}
+
+.card:hover .card_img {
+	transform: translate(35px, -35px);
+}
+
+.card:hover .card_body {
+	transform: translate(-35px, 35px);
+}
